@@ -28,7 +28,7 @@
 <div>
   <h2>Solution URL and Live Site URL:</h2>
   <ul>
-    <li><a href='https://github.com/Rafael-Urei/e-commerce-front-mentor'>E-commerce Product Page</a></li>
+    <li><a href='https://github.com/Rafael-Urei/challenge-ecommerce/tree/main'>E-commerce Product Page</a></li>
     <li><a href='https://challenge-ecommerce-theta.vercel.app/'>Live Site E-commerce Product Page</a></li>
   </ul>
 </div>
