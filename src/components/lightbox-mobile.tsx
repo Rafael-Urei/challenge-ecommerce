@@ -37,13 +37,14 @@ export default function LightBoxMobile({ product }: Props) {
       >
         <Previous />
       </button>
-      <div className="relative flex flex-col gap-3 items-center rounded-lg w-full h-[375px]">
+      <div className="relative flex flex-col gap-3 items-center rounded-lg w-full h-[340px]">
         <Image
           src={product.image[currentPhoto]}
           alt="product-mobile"
           className="cursor-zoom-in"
           fill
           priority
+          style={{ backgroundSize: "contain" }}
         ></Image>
       </div>
       <button

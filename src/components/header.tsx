@@ -20,8 +20,8 @@ export function Header() {
   return (
     <>
       {isOpen && <Menu />}
-      <header className="flex items-center justify-between px-4 h-24 md:mx-44 md:border-b border-slate-200 relative">
-        <div className="flex h-full items-center gap-4 md:gap-20">
+      <header className="flex items-center justify-between px-4 h-16 md:h-24 md:mx-44 md:border-b border-slate-200 relative">
+        <div className="flex h-full items-center gap-3 md:gap-20">
           <button
             className="flex justify-center items-center md:hidden"
             onClick={handleMenu}
@@ -86,14 +86,14 @@ export function Header() {
             onClick={() => setIsCartOpen(!isCartOpen)}
           >
             {value.length > 0 && (
-              <div className="absolute bg-orange-400 h-4 w-6 rounded-lg font-bold text-white text-xs flex items-center justify-center top-[-12px] right-[-6px]">
+              <div className="absolute bg-orange-400 h-3 w-5 rounded-lg font-bold text-white text-[10px] flex items-center justify-center top-[-6px] right-[-6px]">
                 {value.length}
               </div>
             )}
             <Cart />
           </div>
 
-          <div className="rounded-full bg-slate-200 h-8 w-8 relative">
+          <div className="rounded-full cursor-pointer bg-slate-200 h-6 w-6 md:h-10 md:w-10 relative duration-200 border-2 border-transparent hover:border-orange-400">
             <Image src="/images/image-avatar.png" alt="profile" fill></Image>
           </div>
         </div>

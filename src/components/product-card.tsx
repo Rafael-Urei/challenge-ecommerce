@@ -7,6 +7,7 @@ import { Products } from "@/types/products";
 import { formatPrice } from "@/utils/format-price";
 import Image from "next/image";
 import Link from "next/link";
+import { WhiteCart } from "./icons/white-cart";
 
 type Props = {
   product: Products;
@@ -86,8 +87,9 @@ export default function ProductCard({ product }: Props) {
       <button
         type="button"
         onClick={addToCart}
-        className="bg-orange-400 rounded-md h-14 font-bold text-white duration-200 hover:bg-orange-500"
+        className="flex items-center justify-center gap-5 bg-orange-400 rounded-md h-14 font-bold text-white duration-200 hover:bg-orange-500"
       >
+        <WhiteCart />
         Add to Cart
       </button>
     </div>

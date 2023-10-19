@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={kumb.className}>
+      <body className={`${kumb.className} min-h-screen`}>
         <Providers>
           <Header />
           {children}

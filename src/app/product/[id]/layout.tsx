@@ -12,5 +12,5 @@ export default function AboutLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <main>{children}</main>;
+  return <main className="h-full">{children}</main>;
 }

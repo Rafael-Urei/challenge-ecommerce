@@ -7,7 +7,7 @@ type Props = {
 
 export function LightBoxModal({ product }: Props) {
   return (
-    <div className="h-full w-full bg-black bg-opacity-70 fixed flex items-center justify-center z-10">
+    <div className="h-screen w-full bg-black bg-opacity-70 absolute top-0 flex items-center justify-center z-10">
       <LightBox product={product} isModal={true} />
     </div>
   );
