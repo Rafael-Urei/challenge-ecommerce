@@ -10,7 +10,7 @@ export default function useProducts() {
   useEffect(() => {
     async function getData() {
       const res = await fetch(
-        "https://gist.githubusercontent.com/Rafael-Urei/b2710fdfe6d250f1c46ca08f4caff6ce/raw/3aeb6c15afa16af1c26a9da6dde8bb944bd98104/products.json"
+        "https://gist.githubusercontent.com/Rafael-Urei/b2710fdfe6d250f1c46ca08f4caff6ce/raw/bbc0b6fe8431b99e9e8f480b9fe0e775da83871d/products.json"
       );
       if (!res.ok) throw new Error("Failed to fetch data...");
       const data: Products[] = await res.json();
