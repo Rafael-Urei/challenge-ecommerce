@@ -10,6 +10,7 @@ import { MenuIcon } from "lucide-react";
 import { useMenu } from "@/contexts/menu-context";
 import Menu from "./menu";
 import Image from "next/image";
+import logo from "../../public/logo.svg";
 
 export function Header() {
   const actualRoute = usePathname();
@@ -19,7 +20,7 @@ export function Header() {
   return (
     <>
       {isOpen && <Menu />}
-      <header className="flex items-center justify-between px-4 h-24 md:mx-44 md:border-b border-slate-200">
+      <header className="flex items-center justify-between px-4 h-24 md:mx-44 md:border-b border-slate-200 relative">
         <div className="flex h-full items-center gap-4 md:gap-20">
           <button
             className="flex justify-center items-center md:hidden"
@@ -28,7 +29,7 @@ export function Header() {
             <MenuIcon />
           </button>
           <Link href="/" className="font-bold text-3xl text-slate-800">
-            sneakers
+            <Image src={logo} alt="logo" width={138} height={20} />
           </Link>
           <ul className="md:flex h-full items-center justify-center gap-10 hidden">
             <li
@@ -78,7 +79,8 @@ export function Header() {
             </li>
           </ul>
         </div>
-        <div className="flex items-center gap-10 relative">
+        <Checkout />
+        <div className="flex items-center gap-10">
           <div
             className="relative cursor-pointer"
             onClick={() => setIsCartOpen(!isCartOpen)}
@@ -90,7 +92,7 @@ export function Header() {
             )}
             <Cart />
           </div>
-          <Checkout />
+
           <div className="rounded-full bg-slate-200 h-8 w-8 relative">
             <Image src="/images/image-avatar.png" alt="profile" fill></Image>
           </div>

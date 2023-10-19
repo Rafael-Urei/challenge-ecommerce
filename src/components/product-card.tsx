@@ -15,7 +15,7 @@ type Props = {
 export default function ProductCard({ product }: Props) {
   const { addToLocalCart } = useCartProducts();
   const { cartProducts, updateLocalStorage } = useLocalStorage(
-    "carti-items",
+    "cart-items",
     []
   );
 
