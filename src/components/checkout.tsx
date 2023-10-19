@@ -22,7 +22,7 @@ export function Checkout() {
   return (
     <>
       {isCartOpen && (
-        <div className="absolute top-[235px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col bg-white rounded-md w-[350px] shadow-2xl divide-y pb-4 z-20">
+        <div className="absolute top-[235px] md:left-full md:translate-x-[-270px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col bg-white rounded-md w-[350px] shadow-2xl divide-y pb-4 z-20">
           <h1 className="px-5  py-5 font-bold text-slate-800 text-lg divide-y">
             Cart
           </h1>
